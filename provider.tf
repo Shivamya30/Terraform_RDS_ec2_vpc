@@ -1,0 +1,7 @@
+provider "aws" {
+access_key = "*********************"
+secret_key = "*********************************"
+region = var.aws_region
+}
+data "aws_availability_zones" "all" {}
+
