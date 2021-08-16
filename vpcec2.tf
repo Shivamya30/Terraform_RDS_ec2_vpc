@@ -3,7 +3,7 @@ resource "aws_instance" "myec2" {
        instance_type = "t2.micro"
        subnet_id = "${aws_subnet.My-subnet-public-1.id}"
        vpc_security_group_ids = [aws_security_group.TerraformEc2_security.id]
-       key_name       =  "jenkins-key"
+       key_name       =  "demo"
    tags = {
 
        Name = "Terraform-ec2"
